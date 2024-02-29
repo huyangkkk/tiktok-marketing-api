@@ -12,13 +12,13 @@ Convenient wrapper for [TikTok Marketing API](https://ads.tiktok.com/marketing_a
 ### Installation
 
 ```bash
-$ composer require promopult/tiktok-marketing-api
+$ composer require huyang/tiktok-marketing-api
 ```
 or
 ```
 "require": {
   // ...
-  "promopult/tiktok-marketing-api": "*"
+  "huyang/tiktok-marketing-api": "*"
   // ...
 }
 ```

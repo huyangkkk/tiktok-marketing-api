@@ -122,12 +122,13 @@ final class Bc extends \Promopult\TikTokMarketingApi\AbstractService
      * @see https://ads.tiktok.com/marketing_api/docs?id=1690131505474562
      */
     public function advertiserCreate(
-        int $bcId,
+        string $bcId,
         array $advertiserInfo,
         array $customerInfo,
         array $qualificationInfo,
         ?array $contactInfo = null,
-        ?array $billingInfo = null
+        ?array $billingInfo = null,
+        ?array $billing_group_info=null
     ): array {
         return $this->requestApi(
             'POST',
@@ -138,7 +139,8 @@ final class Bc extends \Promopult\TikTokMarketingApi\AbstractService
                 'customer_info' => $customerInfo,
                 'qualification_info' => $qualificationInfo,
                 'contact_info' => $contactInfo,
-                'billing_info' => $billingInfo
+                'billing_info' => $billingInfo,
+                'billing_group_info'=>$billing_group_info
             ]
         );
     }
